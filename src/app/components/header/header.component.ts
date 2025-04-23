@@ -28,7 +28,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
       this.isDarkMode = saveMode === 'true';
       document.documentElement.classList.toggle('dark', this.isDarkMode);
     }
-    this.toggleDarkMode()
   }
   ngOnDestroy() {
     // Cleanup logic can go here
