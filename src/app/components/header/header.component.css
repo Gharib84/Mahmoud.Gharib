@@ -20,17 +20,19 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     width: 100%;
     margin: 0;
     padding: 1rem;
     transition: opacity 0.3s ease, transform 0.3s ease;
     background-color: var(--color-white, white);
-    height: calc(100vh - 60px);
+    height: 100vh;
+    z-index: 10;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
+    overflow: hidden;
   }
 
   .social-icons {
