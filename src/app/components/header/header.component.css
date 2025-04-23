@@ -10,13 +10,17 @@
   .dark .menu {
     background-color: var(--color-background-dark);
   }
+  .logo-text
+  {
+    font-size: 1.8rem !important;
+  }
   .menu {
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
     width: 100%;
     margin: 0;
