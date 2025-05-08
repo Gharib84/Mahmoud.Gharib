@@ -6,7 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @theme
 {
-    --color-background-dark:oklch(0.18 0 102.07);
+    --color-background-dark:oklch(0.09 0.0056 285.17);
     --color-primary: oklch(0.92 0 0);
     --color-foreground: oklch(0.92 0 0);
     --color-muted: oklch(0.73 0 0);

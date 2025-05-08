@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
-
+import { ProjectsComponent } from './components/projects/projects.component';
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent,IntroductionComponent],
+  imports: [HeaderComponent,IntroductionComponent,ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
