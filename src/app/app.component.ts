@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent,IntroductionComponent,ProjectsComponent],
+  imports: [HeaderComponent,IntroductionComponent,ProjectsComponent,ExperienceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
