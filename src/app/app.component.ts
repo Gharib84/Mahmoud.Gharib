@@ -4,6 +4,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import {
+    TranslateService,
+    TranslatePipe,
+    TranslateDirective
+} from "@ngx-translate/core";
 @Component({
   selector: 'app-root',
   imports: [HeaderComponent,IntroductionComponent,ProjectsComponent,ExperienceComponent],
