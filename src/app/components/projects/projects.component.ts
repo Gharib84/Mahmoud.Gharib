@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { TranslatePipe } from '@ngx-translate/core';
+import { PageSection } from '../../core/page-section';
 @Component({
   selector: 'app-projects',
   imports: [],
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+  pageSection: PageSection = {
+    title: 'Projects'
+  }
 
 }
