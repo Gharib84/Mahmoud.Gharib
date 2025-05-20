@@ -1,4 +1,4 @@
-import { Component,inject } from '@angular/core';
+import { Component,inject,OnInit } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ProjectsComponent } from './components/projects/projects.component';
