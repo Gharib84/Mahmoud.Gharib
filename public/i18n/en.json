@@ -7,5 +7,14 @@
     },
     "about": {
         "intro": "{{about}}"
+    },
+    "projects": {
+        "title": "Projects"
+    },
+    "experiences": {
+        "title": "Experiences"
+    },
+    "contact": {
+        "title": "Contact"
     }
 }
