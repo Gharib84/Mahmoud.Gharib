@@ -11,7 +11,7 @@ import {
 } from "@ngx-translate/core";
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent,IntroductionComponent,ProjectsComponent,ExperienceComponent],
+  imports: [HeaderComponent,IntroductionComponent,ProjectsComponent,ExperienceComponent,TranslatePipe,TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
