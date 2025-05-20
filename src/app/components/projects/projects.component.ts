@@ -3,7 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { PageSection } from '../../core/page-section';
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })

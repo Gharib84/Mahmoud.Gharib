@@ -9,7 +9,7 @@
         "intro": "{{about}}"
     },
     "projects": {
-        "title": "Projects"
+        "title": "{{title}}"
     },
     "experiences": {
         "title": "Experiences"
