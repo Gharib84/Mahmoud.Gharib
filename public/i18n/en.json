@@ -4,5 +4,8 @@
         "projects": "Projects",
         "experiences": "Experiences",
         "contact": "Contact"
+    },
+    "about": {
+        "intro": "{{about}}"
     }
 }
