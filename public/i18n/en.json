@@ -12,9 +12,9 @@
         "title": "{{title}}"
     },
     "experiences": {
-        "title": "Experiences"
+        "title": "{{title}}"
     },
     "contact": {
-        "title": "Contact"
+        "title": "{{title}}"
     }
 }
