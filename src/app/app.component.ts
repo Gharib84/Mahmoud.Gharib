@@ -1,20 +1,20 @@
-import { Component,inject,OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import {
-    TranslateService,
-    TranslatePipe,
-    TranslateDirective
+  TranslateService,
+  TranslatePipe,
+  TranslateDirective
 } from "@ngx-translate/core";
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent,IntroductionComponent,ProjectsComponent,ExperienceComponent,TranslatePipe,TranslateDirective],
+  imports: [HeaderComponent, IntroductionComponent, ProjectsComponent, ExperienceComponent, TranslatePipe, TranslateDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   private translate: TranslateService = inject(TranslateService);
   title = 'portfolio';
   isDarkMode = false;
@@ -35,5 +35,9 @@ export class AppComponent {
       this.isDarkMode = savedMode === 'true';
       document.documentElement.classList.toggle('dark', this.isDarkMode);
     }
+
+    this.translate.addLangs(['pl','de', 'en']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
   }
 }
