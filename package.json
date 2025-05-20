@@ -29,6 +29,7 @@
     "@angular/cli": "^19.2.12",
     "@angular/compiler-cli": "^19.2.11",
     "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
