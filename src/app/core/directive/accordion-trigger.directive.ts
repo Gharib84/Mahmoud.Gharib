@@ -5,6 +5,9 @@ import { Directive,ElementRef,HostListener,Renderer2 } from '@angular/core';
 })
 export class AccordionTriggerDirective {
 
-  constructor() { }
+  constructor(
+    private el: ElementRef,
+    private renderer: Renderer2
+  ) { }
 
 }
