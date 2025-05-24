@@ -7,6 +7,9 @@
 
 .accordion-item {
   border-bottom: 1px solid #e1e1e1;
+  min-height: 0;
+  overflow: hidden;
+  transition: min-height 0.3s ease-in-out;
 }
 
 .accordion-item:last-child {
@@ -38,15 +41,9 @@
   box-shadow: 0 0 0 2px #005fcc inset;
 }
 
-/* Panel Animation */
-.accordion-panel {
-  padding: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease;
-  max-height: 0;
-}
 
-.accordion-panel[aria-hidden="false"] {
+
+.accordion-panel {
   max-height: 500px; /* Adjust based on content */
   padding: 1rem;
 }

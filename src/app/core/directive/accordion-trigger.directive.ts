@@ -11,8 +11,20 @@ export class AccordionTriggerDirective {
   ) { }
 
   @HostListener('click')
-  toggleOpen() {
+  toggleOpen(): void {
     this.ariaExpanded = !this.ariaExpanded;
+    const button = this.el.nativeElement;
+    const panelId = button.getAttribute('aria-controls');
+    if (panelId) {
+      const parent = button.parentNode?.parentNode;
+      const panel = parent?.querySelector(`#${panelId}`);
+      if (panel) {
+        if (this.ariaExpanded) {
+          this.renderer.removeAttribute(panel, 'hidden');
+        } else {
+          this.renderer.setAttribute(panel, 'hidden', 'true');
+        }
+      }
+    }
   }
-
 }
