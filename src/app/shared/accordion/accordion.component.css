@@ -1,20 +1,63 @@
- .accordion-panel {
-  display: none;
+/* Base Styles */
+.accordion {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.accordion-panel.open {
-  display: block;
+.accordion-item {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
 }
 
 .accordion-trigger {
   width: 100%;
-  text-align: left;
-  padding: 10px;
-  background-color: var(--color-background-dark);
+  padding: 1rem;
+  background: var(--color-background-dark);
   border: none;
+  text-align: left;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.accordion-trigger:hover {
-  background-color:var(--color-background-dark);
+/* Hover/Focus States */
+.accordion-trigger:hover,
+.accordion-trigger:focus {
+  background: var(--color-background-dark);
+  outline: none; /* Use `box-shadow` for focus instead */
+}
+
+.accordion-trigger:focus-visible {
+  box-shadow: 0 0 0 2px #005fcc inset;
+}
+
+/* Panel Animation */
+.accordion-panel {
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  max-height: 0;
+}
+
+.accordion-panel[aria-hidden="false"] {
+  max-height: 500px; /* Adjust based on content */
+  padding: 1rem;
+}
+
+/* Optional: Animated Chevron */
+.accordion-trigger::after {
+  content: "▼";
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-trigger[aria-expanded="true"]::after {
+  transform: rotate(-90deg);
 }
