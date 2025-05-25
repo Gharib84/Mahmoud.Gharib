@@ -1,4 +1,5 @@
 export interface Experience {
+    id:number;
     company?: string;
     platform?: string;
     type: string;
