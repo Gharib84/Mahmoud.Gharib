@@ -1,27 +1,33 @@
 @for (experience of experiences ; track experience.id) {
-<div class="accordion mb-3 mx-0 lg:mx-0 p-4 mt-5 lg:mt-10">
+<div class="accordion mb-0 mx-0 lg:mx-0 p-0 mt-5 lg:mt-10">
   <div class="accordion-item">
     <h2>
       <button class="accordion-trigger" aria-expanded="false" aria-controls="panel1" id="first-element"
         appAccordionTrigger>
-        <div class="info flex justify-between items-center w-full">
+        <div class="info font-inter not-italic font-normal md:text-justify leading-relaxed text-left text-primary flex p-6 justify-between items-center w-full">
           <div class="company">
-            {{ experience.title }} at {{experience.company}}
+            {{ experience.title }} At {{experience.company}}
           </div>
           <div class="date mr-2">
             {{experience.start}}
             @if (!experience.end) {
-            
+
             } @else {
-               {{experience.end}}
+            {{experience.end}}
             }
-           
+
           </div>
         </div>
       </button>
     </h2>
     <div id="panel1" class="accordion-panel bg-background-dark" role="region" aria-labelledby="fist-element" hidden>
-      <p>Content for section 1...</p>
+      <ul class="space-y-2 px-2">
+        @for (task of experience.tasks ; track task) {
+        <li class="bg-background-dark/10  rounded-md px-5 py-3 text-left break-words w-full forn-inter font-normal details">
+          {{task}}
+        </li>
+        }
+      </ul>
     </div>
   </div>
 

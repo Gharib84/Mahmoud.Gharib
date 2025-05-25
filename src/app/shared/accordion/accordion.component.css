@@ -6,7 +6,7 @@
 }
 
 .accordion-item {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--color-background-dark);
   min-height: 0;
   overflow: hidden;
   transition: min-height 0.3s ease;
@@ -34,18 +34,21 @@
 .accordion-trigger:hover,
 .accordion-trigger:focus {
   background: var(--color-background-dark);
-  outline: none; /* Use `box-shadow` for focus instead */
+  outline: none;
+  /* Use `box-shadow` for focus instead */
 }
 
 .accordion-trigger:focus-visible {
-  box-shadow: 0 0 0 2px #005fcc inset;
+  box-shadow: 0 0 0 2px var(--color-background-dark) inset;
 }
 
 
 
 .accordion-panel {
-  max-height: 500px; /* Adjust based on content */
+  max-height: 500px;
+  /* Adjust based on content */
   padding: 1rem;
+  overflow-y: auto;
 }
 
 /* Optional: Animated Chevron */
@@ -57,4 +60,15 @@
 
 .accordion-trigger[aria-expanded="true"]::after {
   transform: rotate(-90deg);
+}
+
+@media(max-width: 768px) {
+  .accordion-trigger  {
+    font-size: 0.8rem;
+  }
+
+  .details
+  {
+    font-size: 0.9rem;
+  }
 }

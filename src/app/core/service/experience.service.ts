@@ -9,18 +9,24 @@ export class ExperienceService {
   experiences: Experience[] = [
     {
       id: 1,
-      company: 'Company A',
-      platform: 'Platform X',
+      company: 'Eko Okna S.A. Poland',
       type: 'Full-time',
-      title: 'Full Stack Developer',
-      start: '03-2023',
-      end: '11-2024',
+      title: 'FullStack Engineer',
+      start: 'Mar 2023',
+      end: 'Nov 2024',
       tasks: [
-        'Developed web applications using Angular and Node.js',
-        'Implemented RESTful APIs using Express.js',
-        'Collaborated with cross-functional teams to deliver high-quality software',
-        'Optimized API performance using query optimization techniques',
-        'Contributed to code reviews and provided constructive feedback to fellow developers'
+        "Collaborated with cross-functional teams to design, develop and maintain System ERP ensuring responsive user-friendly interfaces and efficient backend systems.",
+        "Worked with technologies such as HTML, CSS, JavaScript to create dynamic, responsive user interfaces.",
+        "Developed and optimized server-side logic using Symfony, PHP to enhance performance and scalability.",
+        "Integrated databases like MySQL, PostgreSQL, MongoDB and ensured seamless communication between the front end and back end.",
+        "Utilized RESTful APIs and third-party libraries for enhanced functionality and to integrate external services.",
+        "Participated in code reviews and collaborated with senior developers to follow best practices in software development.",
+        "Used version control systems (e.g., Git) to manage and document development workflows.",
+        "Assisted in debugging and resolving issues across the stack, both on the client and server sides",
+        "Worked in an Agile environment, contributing to sprints and actively participating in daily stand-ups,retrospectives, and sprint planning.",
+        "Optimized database performance using Doctrine ORM, reducing data retrieval times by 40% and improving query performance through indexing and caching strategies.",
+        "Implemented MVC architecture in large-scale projects, ensuring clean code structure and reducing bug rates by 20% through modular and maintainable design.",
+        "Enhanced user interfaces with HTML, CSS, and JavaScript, increasing user engagement by 25% and reducing page load times by 30% through responsive design and optimization."
       ]
     },
     {
