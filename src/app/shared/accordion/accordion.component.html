@@ -1,36 +1,31 @@
 @for (experience of experiences ; track experience.id) {
-<div class="accordion mb-0 mx-0 lg:mx-0 p-0 mt-5 lg:mt-10">
-  <div class="accordion-item">
-    <h2>
-      <button class="accordion-trigger" aria-expanded="false" aria-controls="panel1" id="first-element"
-        appAccordionTrigger>
-        <div class="info font-inter not-italic font-normal md:text-justify leading-relaxed text-left text-primary flex p-6 justify-between items-center w-full">
-          <div class="company">
-            {{ experience.title }} At {{experience.company}}
-          </div>
-          <div class="date mr-2">
-            {{experience.start}}
-            @if (!experience.end) {
-
-            } @else {
-            {{experience.end}}
-            }
-
-          </div>
-        </div>
-      </button>
-    </h2>
-    <div id="panel1" class="accordion-panel bg-background-dark" role="region" aria-labelledby="fist-element" hidden>
-      <ul class="space-y-2 px-2">
-        @for (task of experience.tasks ; track task) {
-        <li class="bg-background-dark/10  rounded-md px-5 py-3 text-left break-words w-full forn-inter font-normal details">
-          {{task}}
-        </li>
-        }
-      </ul>
+  <div class="w-full py-5">
+  <!-- Accordion Item 1 -->
+  <details class="group rounded-lg overflow-hidden shadow-sm bg-background-dark">
+    <summary class="flex items-center justify-between w-full p-5 font-bold bg-background-dark dark:bg-purple-900/55
+                          hover:bg-opacity-90 transition-colors duration-150">
+      <span class="font-bold text-primary font-inter">{{experience.title}}</span>
+      <span class="flex items-center justify-center w-7 h-7 shrink-0 text-icon-closed-symbol-color">
+        <!-- Plus Icon (visible when closed) -->
+        <svg class="w-5 h-5 block group-open:hidden" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <!-- Minus Icon (visible when open) -->
+        <span
+          class="hidden group-open:flex items-center justify-center w-6 h-6 rounded-full bg-icon-open-circle-bg text-icon-open-symbol-color">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+      </span>
+    </summary>
+    <div class="p-0 px-3 mt-4 bg-accordion-content-area-bg text-accordion-content-area-text-color bg-background-dark">
+      <p class="text-sm leading-relaxed">Detailed explanation about why this term is used will appear here. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
     </div>
-  </div>
-
-  <!-- More items -->
-</div>
+  </details>
+</div> 
 }

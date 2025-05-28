@@ -5,7 +5,7 @@ import { ExperienceService } from '../../core/service/experience.service';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-accordion',
-  imports: [AccordionTriggerDirective],
+  imports: [],
   templateUrl: './accordion.component.html',
   styleUrl: './accordion.component.css'
 })
