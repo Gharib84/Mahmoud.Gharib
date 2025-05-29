@@ -1,10 +1,19 @@
 @for (experience of experiences ; track experience.id) {
-  <div class="w-full py-5">
+<div class="w-full py-2 mb-4 dark:border-1">
   <!-- Accordion Item 1 -->
   <details class="group rounded-lg overflow-hidden shadow-sm bg-background-dark">
-    <summary class="flex items-center justify-between w-full p-5 font-bold bg-background-dark dark:bg-dropdown
+    <summary class="flex items-center justify-between w-full p-5 font-bold bg-background-dark
                           hover:bg-opacity-90 transition-colors duration-150">
-      <span class="font-bold text-primary font-inter">{{experience.title}}</span>
+      <span class="font-bold text-primary font-inter">{{experience.title}} At {{experience.company}}
+        <span class="font-manrope not-italic font-normal md:text-justify leading-relaxed text-left px-2">
+          @if(!experience.end){
+          <span
+            class="font-manrope text-primary not-italic font-normal md:text-justify leading-relaxed text-left px-2">Present</span>
+          }@else {
+          <span>{{experience.start}} - {{experience.end}}</span>
+          }
+        </span>
+      </span>
       <span class="flex items-center justify-center w-7 h-7 shrink-0 text-icon-closed-symbol-color">
         <!-- Plus Icon (visible when closed) -->
         <svg class="w-5 h-5 block group-open:hidden" fill="currentColor" viewBox="0 0 20 20"
@@ -22,10 +31,17 @@
         </span>
       </span>
     </summary>
-    <div class="p-0 px-3 mt-4 bg-accordion-content-area-bg text-accordion-content-area-text-color bg-background-dark">
-      <p class="text-sm leading-relaxed">Detailed explanation about why this term is used will appear here. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+    <div
+      class="p-0 px-3 mt-4 bg-accordion-content-area-bg text-accordion-content-area-text-color bg-background-dark max-h-80 overflow-y-auto transition-all duration-300">
+      <ul class="space-y-2 mt-2">
+        @for (item of experience.tasks; track item) {
+        <li class="flex items-start gap-2 bg-background-dark rounded-md px-4 py-2 text-left text-sm text-white font-inter">
+          <i class="pi pi-check-circle text-green-500 mt-1"></i>
+          <span class="break-words text-muted flex-1">{{item}}</span>
+        </li>
+        }
+      </ul>
     </div>
   </details>
-</div> 
+</div>
 }
