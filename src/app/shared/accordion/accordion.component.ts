@@ -7,7 +7,7 @@ import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-accordion',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, AccordionTriggerDirective],
   templateUrl: './accordion.component.html',
   styleUrl: './accordion.component.css'
 })

@@ -31,16 +31,23 @@ export class ExperienceService {
     },
     {
       id: 2,
-      company: 'Company B',
+      company: 'Freelance',
       platform: 'Platform Y',
       type: 'Part-time',
-      title: 'Front-end Developer',
+      title: 'FullStack Engineer Self-Employed',
       start: 'present',
       tasks: [
-        'Designed and implemented responsive user interfaces using HTML, CSS, and JavaScript',
-        'Collaborated with cross-functional teams to deliver high-quality software',
-        'Optimized API performance using query optimization techniques',
-        'Contributed to code reviews and provided constructive feedback to fellow developers'
+        "A full-stack progressive web application for booking travel trips online",
+        "designed and developed from scratch using modern technologies.",
+        " This app allows users to browse book and manage travel trips effortlessly.",
+        "Built with: Angular (18+), NestJS, TypeORM, MySQL, Swagger, Material Design, Spartan UI.",
+        "Front-End: Implemented a responsive and intuitive user interface using Angular, Material Design, and Spartan UI, ensuring a smooth and consistent UX across devices.",
+        "Back-End: Developed a RESTful API using NestJS and TypeORM with MySQL for data persistence. Ensured scalability and maintainability of the backend architecture.",
+        "Utilized RESTful APIs and third-party libraries for enhanced functionality and to integrate external services.",
+        "Back-End: Developed a RESTful API using NestJS and TypeORM with MySQL for data persistence. Ensured scalability and maintainability of the backend architecture.",
+        "API Documentation: Designed and documented the entire API from scratch using Swagger for better developer collaboration and ease of integration.",
+        "Progressive Web App (PWA): Enabled offline capabilities and push notifications, providing a native-like experience for users.",
+        "Challenges Overcome: Optimized performance for large data sets and managed complex booking workflows."
       ]
     }
   ];
