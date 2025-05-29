@@ -1,9 +1,9 @@
 import { Component,OnInit,OnDestroy } from '@angular/core';
-import { NgIf } from '@angular/common';
+
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 @Component({
   selector: 'app-header',
-  imports: [NgIf, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

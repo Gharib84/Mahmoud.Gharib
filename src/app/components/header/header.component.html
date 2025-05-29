@@ -3,27 +3,31 @@
     text-base sm:text-lg md:text-xl lg:text-2xl tracking-tight">
     <span class="hidden xs:inline logo-text">MO.Gharib</span>
     <span class="logo-text inline xs:hidden text-black dark:text-primary font-bold">MG</span>
-</div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
-    <label for="menu-toggle" id="menu-toggle" class="custom-hamburger hidden">
-        <span class="bar bg-background-dark! dark:bg-primary!"></span>
-        <span class="bar bg-background-dark! dark:bg-primary!"></span>
-        <span class="bar bg-background-dark! dark:bg-primary!"></span>
-    </label>
-    <ul class="menu md:flex flex-col md:flex-row items-center justify-between gap-4 text-foreground">
-        <li><a href="#about" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{ 'navbar.home' | translate }}</a></li>
-        <li><a href="#projects" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{'navbar.projects' | translate}}</a></li>
-        <li><a href="#experience" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{'navbar.experiences' | translate}}</a></li>
-        <li><a href="#contact" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{'navbar.contact' | translate}}</a></li>
-    </ul>
-    <div class="social-icons flex flex-row justify-between items-center cursor-pointer">
-        <!-- Show sun icon in dark mode -->
-        <i class="pi pi-sun transition! duration-300! hover:text-blue-500!"
-           (click)="toggleDarkMode()"
-           *ngIf="isDarkMode" style="font-size: 1.2rem;"></i>
-        <!-- Show moon icon in light mode -->
-        <i class="pi pi-moon transition! duration-300! hover:text-blue-500!"
-           (click)="toggleDarkMode()"
-           *ngIf="!isDarkMode" style="font-size: 1.2rem;"></i>
-    </div>
+  </div>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
+  <label for="menu-toggle" id="menu-toggle" class="custom-hamburger hidden">
+    <span class="bar bg-background-dark! dark:bg-primary!"></span>
+    <span class="bar bg-background-dark! dark:bg-primary!"></span>
+    <span class="bar bg-background-dark! dark:bg-primary!"></span>
+  </label>
+  <ul class="menu md:flex flex-col md:flex-row items-center justify-between gap-4 text-foreground">
+    <li><a href="#about" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{ 'navbar.home' | translate }}</a></li>
+    <li><a href="#projects" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{'navbar.projects' | translate}}</a></li>
+    <li><a href="#experience" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{'navbar.experiences' | translate}}</a></li>
+    <li><a href="#contact" class="hover:text-blue-500 hover:font-bold font-inter not:italic">{{'navbar.contact' | translate}}</a></li>
+  </ul>
+  <div class="social-icons flex flex-row justify-between items-center cursor-pointer">
+    <!-- Show sun icon in dark mode -->
+    @if (isDarkMode) {
+      <i class="pi pi-sun transition! duration-300! hover:text-blue-500!"
+        (click)="toggleDarkMode()"
+      style="font-size: 1.2rem;"></i>
+    }
+    <!-- Show moon icon in light mode -->
+    @if (!isDarkMode) {
+      <i class="pi pi-moon transition! duration-300! hover:text-blue-500!"
+        (click)="toggleDarkMode()"
+      style="font-size: 1.2rem;"></i>
+    }
+  </div>
 </header>
