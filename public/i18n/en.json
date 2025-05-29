@@ -16,5 +16,16 @@
     },
     "contact": {
         "title": "{{title}}"
+    },
+    "experience": {
+        "company": "{{company}}",
+        "platform": "{{platform}}",
+        "type": "{{type}}",
+        "title": "{{title}}",
+        "start": "{{start}}",
+        "end": "{{end}}",
+        "tasks":[
+            "{{task}}"
+        ]
     }
 }

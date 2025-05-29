@@ -3,9 +3,11 @@ import { AccordionTriggerDirective } from '../../core/directive/accordion-trigge
 import { Experience } from '../../core/experience';
 import { ExperienceService } from '../../core/service/experience.service';
 import { Subscription } from 'rxjs';
+import {TranslatePipe} from "@ngx-translate/core";
+
 @Component({
   selector: 'app-accordion',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './accordion.component.html',
   styleUrl: './accordion.component.css'
 })
