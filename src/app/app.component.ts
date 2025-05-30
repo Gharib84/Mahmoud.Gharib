@@ -8,9 +8,11 @@ import {
   TranslatePipe,
   TranslateDirective
 } from "@ngx-translate/core";
+import { ContactComponent } from './components/contact/contact.component';
+
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, IntroductionComponent, ProjectsComponent, ExperienceComponent],
+  imports: [HeaderComponent, IntroductionComponent, ProjectsComponent, ExperienceComponent,ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
