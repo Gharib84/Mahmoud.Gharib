@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/mo-gharib/"      aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/mahmoud-gharib-441982262/"      aria-label="LinkedIn">
             <i class="pi pi-linkedin text-lg dark:text-primary text-background-dark"></i>
           </a>
         </li>
