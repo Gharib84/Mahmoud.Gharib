@@ -1,6 +1,7 @@
 import { Component,OnInit,OnDestroy } from '@angular/core';
 
 import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import { LanguagesComponent } from '../languages/languages.component';
 @Component({
   selector: 'app-header',
   imports: [TranslatePipe],
