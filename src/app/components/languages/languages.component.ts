@@ -5,24 +5,24 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <!-- Country Selector Component Container -->
-<div class="relative w-72 text-gray-200">
+<div class="relative w-36 text-gray-200">
   <!-- Selected Item Button -->
   <!-- The blue border indicates this element is active/open -->
   <button
-    class="flex items-center justify-between w-full p-3 bg-[#1F2937] rounded-lg border-2 border-blue-500"
+    class="flex items-center justify-between w-full p-3   bg-foreground dark:bg-background-dark rounded-lg"
   >
     <div class="flex items-center">
       <!-- Denmark Flag -->
       <img
         src="https://flagcdn.com/w40/dk.png"
         alt="Denmark flag"
-        class="w-6 h-6 rounded-full mr-3"
+        class="w-4 h-4 rounded-full mr-3"
       />
-      <span class="font-medium">Denmark (DK)</span>
+      <span class="font-foreground">DK</span>
     </div>
     <!-- Chevron Up Icon (indicating the dropdown is open) -->
     <svg
-      class="w-5 h-5 text-gray-400"
+      class="w-5 h-5 text-gray-400 cursor-pointer"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
@@ -37,18 +37,9 @@ import { Component } from '@angular/core';
   </button>
   <!-- Dropdown Menu -->
   <div
-    class="absolute top-full mt-2 w-full bg-[#1F2937] rounded-lg shadow-lg z-10"
+    class="absolute top-full mt-0 w-full bg-background-dark rounded-lg shadow-lg z-10"
   >
-    <ul class="text-gray-200">
-      <!-- Dropdown Item -->
-      <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
-        <img
-          src="https://flagcdn.com/w40/us.png"
-          alt="United States flag"
-          class="w-6 h-6 rounded-full mr-3"
-        />
-        <span class="font-medium">United States (US)</span>
-      </li>
+    <ul class="text-dark dark:text-primary hidden">
       <!-- Dropdown Item -->
       <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
         <img
@@ -56,7 +47,7 @@ import { Component } from '@angular/core';
           alt="United Kingdom flag"
           class="w-6 h-6 rounded-full mr-3"
         />
-        <span class="font-medium">United Kingdom (UK)</span>
+        <span class="font-medium">UK</span>
       </li>
       <!-- Dropdown Item -->
       <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
@@ -65,26 +56,8 @@ import { Component } from '@angular/core';
           alt="Germany flag"
           class="w-6 h-6 rounded-full mr-3"
         />
-        <span class="font-medium">Germany (DE)</span>
-      </li>
-      <!-- Dropdown Item -->
-      <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
-        <img
-          src="https://flagcdn.com/w40/fr.png"
-          alt="France flag"
-          class="w-6 h-6 rounded-full mr-3"
-        />
-        <span class="font-medium">France (FR)</span>
-      </li>
-      <!-- Dropdown Item -->
-      <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
-        <img
-          src="https://flagcdn.com/w40/it.png"
-          alt="Italy flag"
-          class="w-6 h-6 rounded-full mr-3"
-        />
-        <span class="font-medium">Italy (IT)</span>
-      </li>
+        <span class="font-medium">DE</span>
+      </li>     
     </ul>
   </div>
 </div>
