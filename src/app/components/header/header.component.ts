@@ -4,7 +4,7 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 import { LanguagesComponent } from '../languages/languages.component';
 @Component({
   selector: 'app-header',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, LanguagesComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
