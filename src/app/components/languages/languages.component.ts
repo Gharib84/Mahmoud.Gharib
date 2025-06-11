@@ -39,24 +39,24 @@ import { Component } from '@angular/core';
   <div
     class="absolute top-full mt-1 w-full dark:bg-background-dark rounded-lg shadow-lg z-10"
   >
-    <ul class="text-dark dark:text-primary">
+    <ul class="text-dark dark:text-primary hidden">
       <!-- Dropdown Item -->
       <li class="flex items-center p-3 cursor-pointer hover:bg-background-dark hover:dark:bg-gray-700/50">
         <img
           src="https://flagcdn.com/w40/pl.png"
-          alt="United Kingdom flag"
+          alt="Poland flag"
           class="w-5 h-5 rounded-full mr-3"
         />
         <span class="font-medium text-accent dark:text-foreground hover:text-blue-500 hover:font-bold">PL</span>
       </li>
       <!-- Dropdown Item -->
-      <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
+      <li class="flex items-center p-3 cursor-pointer hover:bg-background-dark hover:dark:bg-gray-700/50">
         <img
           src="https://flagcdn.com/w40/de.png"
           alt="Germany flag"
           class="w-6 h-6 rounded-full mr-3"
         />
-        <span class="font-medium">DE</span>
+        <span class="font-medium text-accent dark:text-foreground hover:text-blue-500 hover:font-bold">DE</span>
       </li>     
     </ul>
   </div>
