@@ -9,20 +9,20 @@ import { Component } from '@angular/core';
   <!-- Selected Item Button -->
   <!-- The blue border indicates this element is active/open -->
   <button
-    class="flex items-center justify-between w-full p-3   bg-foreground dark:bg-background-dark rounded-lg"
+    class="flex items-center justify-between w-full p-3  dark:bg-background-dark rounded-lg"
   >
     <div class="flex items-center">
-      <!-- Denmark Flag -->
+      <!-- Uk Flag -->
       <img
-        src="https://flagcdn.com/w40/dk.png"
-        alt="Denmark flag"
-        class="w-4 h-4 rounded-full mr-3"
+        src="https://flagcdn.com/w40/gb.png"
+        alt="United Kingdom flag"
+        class="w-5 h-5 rounded-full mr-3"
       />
-      <span class="font-foreground">DK</span>
+      <span class="text-accent dark:text-foreground hover:text-blue-500 hover:font-bold font-inter not:italic">UK</span>
     </div>
     <!-- Chevron Up Icon (indicating the dropdown is open) -->
     <svg
-      class="w-5 h-5 text-gray-400 cursor-pointer"
+      class="w-5 h-5 text-black dark:text-foreground cursor-pointer"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
@@ -37,17 +37,17 @@ import { Component } from '@angular/core';
   </button>
   <!-- Dropdown Menu -->
   <div
-    class="absolute top-full mt-0 w-full bg-background-dark rounded-lg shadow-lg z-10"
+    class="absolute top-full mt-1 w-full dark:bg-background-dark rounded-lg shadow-lg z-10"
   >
-    <ul class="text-dark dark:text-primary hidden">
+    <ul class="text-dark dark:text-primary">
       <!-- Dropdown Item -->
-      <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
+      <li class="flex items-center p-3 cursor-pointer hover:bg-background-dark hover:dark:bg-gray-700/50">
         <img
-          src="https://flagcdn.com/w40/gb.png"
+          src="https://flagcdn.com/w40/pl.png"
           alt="United Kingdom flag"
-          class="w-6 h-6 rounded-full mr-3"
+          class="w-5 h-5 rounded-full mr-3"
         />
-        <span class="font-medium">UK</span>
+        <span class="font-medium text-accent dark:text-foreground hover:text-blue-500 hover:font-bold">PL</span>
       </li>
       <!-- Dropdown Item -->
       <li class="flex items-center p-3 cursor-pointer hover:bg-gray-700/50">
