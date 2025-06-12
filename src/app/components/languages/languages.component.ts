@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,inject } from '@angular/core';
 import { Language } from '../../core/language';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-languages',
   imports: [],
@@ -65,15 +66,16 @@ import { Language } from '../../core/language';
   styles: ``
 })
 export class LanguagesComponent {
+  private translate: TranslateService = inject(TranslateService);
   isOpen: boolean = false;
   selectedLanguage = {
-    code: 'gb',
+    code: 'en',
     name: 'United Kingdom',
     flagUrl: 'https://flagcdn.com/w40/gb.png'
   };
 
   languages: Language[] = [
-    { code: 'gb', name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w40/gb.png' },
+    { code: 'en', name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w40/gb.png' },
     { code: 'pl', name: 'Poland', flagUrl: 'https://flagcdn.com/w40/pl.png' },
     { code: 'de', name: 'Germany', flagUrl: 'https://flagcdn.com/w40/de.png' },
   ];
@@ -95,6 +97,7 @@ export class LanguagesComponent {
    */
   selectLanguage(language: Language): void {
     this.selectedLanguage = language;
+    this.translate.use(language.code);
     this.isOpen = false;
   }
 }
