@@ -20,6 +20,12 @@ export class AppComponent implements OnInit {
   private translate: TranslateService = inject(TranslateService);
   title = 'portfolio';
   isDarkMode = false;
+  constructor() {
+    this.translate.addLangs(['en', 'pl', 'de']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
+    
 
   /**
    * Toggles the theme between light and dark mode
