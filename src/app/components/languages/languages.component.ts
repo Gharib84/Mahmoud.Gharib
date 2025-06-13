@@ -43,7 +43,7 @@ import { TranslateService } from '@ngx-translate/core';
   >
     <ul class="text-dark dark:text-primary">
       <!-- Dropdown Item -->
-      @for (lang of languages ; track lang) { 
+      @for (lang of languages ; track lang.id) { 
         
       <li class="flex items-center p-3 cursor-pointer hover:bg-background-dark hover:dark:bg-gray-700/50
         " (click)="selectLanguage(lang)">
@@ -69,15 +69,16 @@ export class LanguagesComponent {
   private translate: TranslateService = inject(TranslateService);
   isOpen: boolean = false;
   selectedLanguage = {
+    id: 1,
     code: 'en',
     name: 'United Kingdom',
     flagUrl: 'https://flagcdn.com/w40/gb.png'
   };
 
   languages: Language[] = [
-    { code: 'en', name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w40/gb.png' },
-    { code: 'pl', name: 'Poland', flagUrl: 'https://flagcdn.com/w40/pl.png' },
-    { code: 'de', name: 'Germany', flagUrl: 'https://flagcdn.com/w40/de.png' },
+    { id:1,code: 'en', name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w40/gb.png' },
+    {id:2, code: 'pl', name: 'Poland', flagUrl: 'https://flagcdn.com/w40/pl.png' },
+    { id:3, code: 'de', name: 'Germany', flagUrl: 'https://flagcdn.com/w40/de.png' },
   ];
 
 

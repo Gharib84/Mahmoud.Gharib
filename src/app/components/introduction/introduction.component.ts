@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AboutMe } from '../../core/about-me';
 import { TranslatePipe,TranslateDirective } from '@ngx-translate/core';
+import { AboutPl } from '../../core/about-pl';
 @Component({
   selector: 'app-introduction',
   imports: [TranslatePipe],

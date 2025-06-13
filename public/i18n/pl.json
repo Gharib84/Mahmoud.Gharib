@@ -9,13 +9,13 @@
         "intro": "{{about}}"
     },
     "projects": {
-        "title": "{{title}}"
+        "title": "Projekty"
     },
     "experiences": {
-        "title": "{{title}}"
+        "title": "Doświadczenie"
     },
     "contact": {
-        "title": "{{title}}"
+        "title": "Kontakt"
     },
     "experience": {
         "company": "{{company}}",

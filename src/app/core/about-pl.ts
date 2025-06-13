@@ -1,3 +1,3 @@
 export interface AboutPl {
-    aboutPl: string;
+    aboutMe: string;
 }

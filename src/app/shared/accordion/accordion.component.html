@@ -1,4 +1,5 @@
 @for (experience of experiences ; track experience.id) {
+<!-- Accordion Item -->
 <div class="w-full py-2 mb-4 dark:border-1" appAccordionTrigger >
   <!-- Accordion Item 1 -->
   <details class="group rounded-lg overflow-hidden shadow-sm bg-background-dark">
@@ -34,7 +35,8 @@
     <div
       class="p-0 px-3 mt-4 bg-accordion-content-area-bg text-accordion-content-area-text-color bg-background-dark max-h-80 overflow-y-auto transition-all duration-300">
       <ul class="space-y-2 mt-2">
-        @for (item of experience.tasks; track item) {
+      
+        @for (item of experience.tasks ; track $index) {
         <li
           class="flex items-start gap-2 bg-background-dark rounded-md px-4 py-2 text-left text-sm text-white font-inter">
           <i class="pi pi-check-circle text-green-500 mt-1"></i>
