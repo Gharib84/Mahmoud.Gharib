@@ -19,6 +19,4 @@ export class IntroductionComponent {
       Adept at designing RESTful microservices, integrating  third-party APIs, 
       and maintaining robust CI/CD pipelines with Docker and AWS.`,
   }
-
-
 }

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-contact',
   imports: [],
   template: `
-    <div class="contact px-5 py-5 lg:px-0 w-full h-full flex flex-row justify-between items-center">
+    <div id="contact" class="contact px-5 py-5 lg:px-0 w-full h-full flex flex-row justify-between items-center">
       <h2 class="text-lg font-bold  text-black dark:text-primary font-inter self-center">&copy;{{currentYear}}</h2>
        <ul class="flex flex-row justify-between items-center">
         <li class="mr-4">
