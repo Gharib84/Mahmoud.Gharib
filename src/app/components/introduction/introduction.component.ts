@@ -1,7 +1,8 @@
-import { Component,inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AboutMe } from '../../core/about-me';
-import { TranslatePipe,TranslateDirective,TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { AboutPl } from '../../core/about-pl';
+import { AboutDe } from '../../core/about-de';
 @Component({
   selector: 'app-introduction',
   imports: [TranslatePipe],
@@ -32,7 +33,30 @@ export class IntroductionComponent {
       oraz utrzymywaniu solidnych potoków CI/CD z Dockerem i AWS.`,
   }
 
-  get aboutObj(): AboutMe | AboutPl {
-    return this.translateService.currentLang === 'pl' ? this.aboutPl : this.aboutMe;
+  aboutDe: AboutDe = {
+    aboutMe: `Vielseitiger Full-Stack-Entwickler mit über 2 Jahren Erfahrung in der Erstellung skalierbarer Lösungen 
+      in den Ökosystemen TypeScript, Python und PHP. Erfahren in NestJS, Django und Symfony, 
+      mit Schwerpunkt auf Backend-APIs, datengestützten Anwendungen und plattformübergreifender Webentwicklung. 
+      Nachweisliche Erfolge bei der Optimierung der API-Leistung um 40 % durch Abfrageoptimierung, 
+      Reduzierung der Serverkosten um 30 % durch Python-Automatisierungsskripte 
+      und Bereitstellung von über 3 produktionsreifen Apps mit 95 % Kundenzufriedenheit. 
+      Versiert im Entwurf von RESTful-Mikroservices, der Integration von Drittanbieter-APIs 
+      und der Pflege robuster CI/CD-Pipelines mit Docker und AWS.`,
+  }
+
+  /**
+   * A computed property that returns the correct about object
+   * based on the current language selected by the user.
+   *
+   * @returns The about object in the currently selected language.
+   */
+    get aboutObj(): AboutMe | AboutPl | AboutDe {
+    if (this.translateService.currentLang === 'pl') {
+      return this.aboutPl;
+    } else if (this.translateService.currentLang === 'de') {
+      return this.aboutDe;
+    } else {
+      return this.aboutMe;
+    }
   }
 }

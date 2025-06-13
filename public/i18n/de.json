@@ -9,7 +9,8 @@
         "intro": "{{aboutMe}}"
     },
     "projects": {
-        "title": "Projekte"
+        "title": "Projekte",
+        "view": "Alles sehen"
     },
     "experiences": {
         "title": "Erfahrungen"

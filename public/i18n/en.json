@@ -9,7 +9,8 @@
         "intro": "{{about}}"
     },
     "projects": {
-        "title": "{{title}}"
+        "title": "{{title}}",
+        "view": "View all"
     },
     "experiences": {
         "title": "{{title}}"
@@ -19,7 +20,7 @@
     },
     "experience": {
         "company": "{{company}}",
-        "platform": "{{platform}}",
+        "platform":"{{platform}}",
         "type": "{{type}}",
         "title": "{{title}}",
         "start": "{{start}}",
