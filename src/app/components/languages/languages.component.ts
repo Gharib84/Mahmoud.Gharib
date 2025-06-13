@@ -99,6 +99,7 @@ export class LanguagesComponent {
   selectLanguage(language: Language): void {
     this.selectedLanguage = language;
     this.translate.use(language.code);
+    //console.log(`Language changed to: ${language.code}`);
     this.isOpen = false;
   }
 }

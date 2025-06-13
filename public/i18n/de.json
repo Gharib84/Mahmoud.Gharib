@@ -1,18 +1,18 @@
 {
     "navbar": {
-        "home": "Główna",
-        "projects": "Projekty",
-        "experiences": "Doświadczenie",
+        "home": "Start",
+        "projects": "Projekte",
+        "experiences": "Erfahrungen",
         "contact": "Kontakt"
     },
     "about": {
         "intro": "{{aboutMe}}"
     },
     "projects": {
-        "title": "Projekty"
+        "title": "Projekte"
     },
     "experiences": {
-        "title": "Doświadczenie"
+        "title": "Erfahrungen"
     },
     "contact": {
         "title": "Kontakt"
