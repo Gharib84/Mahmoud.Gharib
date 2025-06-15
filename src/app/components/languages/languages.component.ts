@@ -39,7 +39,7 @@ import { TranslateService } from '@ngx-translate/core';
   <!-- Dropdown Menu -->
   @if (isOpen) {
   <div
-    class="absolute top-full mt-1 w-full dark:bg-background-dark rounded-lg shadow-lg z-10"
+    class="absolute top-full mt-1 w-full bg-white dark:bg-background-dark rounded-lg shadow-lg z-10"
   >
     <ul class="text-dark dark:text-primary">
       <!-- Dropdown Item -->
