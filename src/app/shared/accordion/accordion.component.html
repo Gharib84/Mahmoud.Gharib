@@ -1,4 +1,4 @@
-@for (experience of experiences ; track experience.id) {
+@for (experience of ExperienceObje ; track experience.id) {
 <!-- Accordion Item -->
 <div class="w-full py-2 mb-4 dark:border-1" appAccordionTrigger >
   <!-- Accordion Item 1 -->
@@ -10,7 +10,7 @@
       <span class="font-manrope not-italic font-normal md:text-justify leading-relaxed text-left px-2">
         @if(!experience.end){
         <span
-          class="font-inter">Present</span>
+          class="font-inter">{{experience.start | translate: experience }}</span>
         }@else {
         <span class="font-inter">{{experience.start | translate: experience }} - {{experience.end  | translate: experience }}</span>
         }
