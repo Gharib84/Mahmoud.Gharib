@@ -95,6 +95,50 @@ export class ExperienceService {
       ]
     }
   ];
+
+  detuchExperiences: Experience[] = [
+    {
+      id: 1,
+      company: 'Eko Okna S.A. Deutschland',
+      type: 'Vollzeit',
+      title: 'FullStack Ingenieur',
+      start: 'März 2023',
+      end: 'November 2024',
+      tasks: [
+        "Zusammenarbeit mit funktionsübergreifenden Teams zur Gestaltung, Entwicklung und Wartung des ERP-Systems, um reaktionsschnelle, benutzerfreundliche Oberflächen und effiziente Backend-Systeme zu gewährleisten.",
+        "Arbeit mit Technologien wie HTML, CSS, JavaScript zur Erstellung dynamischer, reaktionsschneller Benutzeroberflächen.",
+        "Entwicklung und Optimierung der serverseitigen Logik mit Symfony, PHP zur Verbesserung der Leistung und Skalierbarkeit   .",
+        "Integration von Datenbanken wie MySQL, PostgreSQL, MongoDB und Gewährleistung einer nahtlosen Kommunikation zwischen Frontend und Backend.",
+        "Nutzung von RESTful APIs und Drittanbieter-Bibliotheken zur Verbesserung der Funktionalität und Integration externer Dienste.",
+        "Teilnahme an Code-Reviews und Zusammenarbeit mit Senior-Entwicklern, um bewährte Verfahren in der Softwareentwicklung zu befolgen.",
+        "Verwendung von Versionskontrollsystemen (z.B. Git), um Entwicklungs-Workflows zu verwalten und zu dokumentieren.",
+        "Unterstützung bei der Fehlersuche und Behebung von Problemen im gesamten Stack, sowohl auf der Client- als auch auf der Serverseite.",
+        "Arbeit in einer agilen Umgebung, Beitrag zu Sprints und aktive Teilnahme an täglichen Stand-ups, Retrospektiven und Sprint-Planung.",
+        "Optimierung der Datenbankleistung mit Doctrine ORM, wodurch die Datenabrufzeiten um 40% verkürzt und die Abfrageleistung durch Indizierung und Caching-Strateg um 30% verbessert wurden.",    
+        "Implementierung der Architektur MVC in großen Projekten, wodurch eine sauberer Code-Struktur und eine Reduktion der Fehlerwahrscheinlichkeit um 20% erreicht wurde.",    
+        "Verbesserung der Benutzerinterface mit HTML, CSS und JavaScript, wodurch die Interaktion mit Benutzern um 25% verbessert wurde und die Ladezeit der Seiten um 30% reduziert wurde."]
+    },
+    {
+      id: 2,
+      company: 'Freelance',
+      platform: 'Plattform Y',
+      type: 'Teilzeit',
+      title: 'FullStack Ingenieur Selbstständig',
+      start: 'present',
+      tasks: [ 
+        "Eine progressive Webanwendung für die Online-Buchung von Reisen, die von Grund auf neu mit modernen Technologien entwickelt wurde.",
+        "Diese App ermöglicht es Benutzern, Reisen einfach zu durchsuchen, zu buchen und zu verwalten.",
+        "Entwickelt mit: Angular (18+), NestJS, TypeORM, MySQL, Swagger, Material Design, Spartan UI.",
+        "Front-End: Implementierung einer responsiven und intuitiven Benutzeroberfläche mit Angular, Material Design und Spartan UI, um ein reibungsloses und konsistentes Benutzererlebnis auf verschiedenen Geräten zu gewährleisten.",
+        "Back-End: Entwicklung einer RESTful API mit NestJS und TypeORM mit MySQL für die Datenspeicherung. Gewährleistung der Skalierbarkeit und Wartbarkeit der Backend-Architektur.",
+        "Nutzung von RESTful APIs und Drittanbieter-Bibliotheken zur Verbesserung der Funktionalität und Integration externer Dienste.",
+        "API-Dokumentation: Entwurf und Dokumentation der gesamten API von Grund auf neu mit Swagger für eine bessere Zusammenarbeit zwischen Entwicklern und eine einfachere Integration.",
+        "Progressive Web App (PWA): Aktivierung von Offline-Funktionen und Push-Benachrichtigungen, um den Benutzern ein natives Erlebnis zu bieten.",
+        "Überwundene Herausforderungen: Optimierung der Leistung für große Datensätze und Verwaltung komplexer Buchungsabläufe."    
+      ]
+    },
+  ];
+
   constructor() { }
 
   getExperiences(): Observable<Experience[]> {
