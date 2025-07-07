@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class ExperienceService {
-  experiences: Experience[] = [
+   readonly experiences: Experience[] = [
     {
       id: 1,
       company: 'Eko Okna S.A. Poland',
@@ -52,7 +52,7 @@ export class ExperienceService {
     }
   ];
 
-  polishExperiences: Experience[] = [
+  readonly polishExperiences: Experience[] = [
     {
       id: 1,
       company: 'Eko Okna S.A. Polska',
@@ -96,7 +96,7 @@ export class ExperienceService {
     }
   ];
 
-  detuchExperiences: Experience[] = [
+  readonly deutschExperiences: Experience[] = [
     {
       id: 1,
       company: 'Eko Okna S.A. Deutschland',
@@ -148,4 +148,8 @@ export class ExperienceService {
   getPolishExperiences(): Observable<Experience[]> {
     return of(this.polishExperiences);
   }
+
+  getDetuchExperiences(): Observable<Experience[]> {
+    return of(this.deutschExperiences);
+  }  
 }

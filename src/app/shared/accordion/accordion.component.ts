@@ -15,6 +15,7 @@ export class AccordionComponent implements OnInit, OnDestroy {
    private subsscription!:Subscription 
    private experienceService = inject(ExperienceService);
    polishExperiences: Experience[] = [];
+   deutschExperiences: Experience[] = [];
    private translateService = inject(TranslateService);
   ngOnInit(): void {
     this.subsscription= this.experienceService.getExperiences().subscribe({
@@ -34,6 +35,15 @@ export class AccordionComponent implements OnInit, OnDestroy {
         console.log(err);
       }
     });
+
+    this.subsscription= this.experienceService.getDetuchExperiences().subscribe({
+      next: (deutschExperiences) => {
+        this.deutschExperiences = deutschExperiences;
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
   }
   ngOnDestroy(): void {
     if(this.subsscription){
@@ -42,7 +52,15 @@ export class AccordionComponent implements OnInit, OnDestroy {
   }
 
   get ExperienceObje():Experience[] {
-    return this.translateService.currentLang === 'pl' ? this.polishExperiences : this.experiences;
+    const currentLang = this.translateService.currentLang;
+    if (currentLang === 'en') {
+      return this.experiences;
+    } else if (currentLang === 'pl') {
+      return this.polishExperiences;
+    } else if (currentLang === 'de') {
+      return this.deutschExperiences
+    }
+    return [];
   }
   
 }
