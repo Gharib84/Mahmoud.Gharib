@@ -1,4 +1,4 @@
-import { Component,inject } from '@angular/core';
+import { Component, inject,ElementRef, HostListener } from '@angular/core';
 import { Language } from '../../core/language';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
@@ -76,11 +76,12 @@ export class LanguagesComponent {
   };
 
   languages: Language[] = [
-    { id:1,code: 'en', name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w40/gb.png' },
-    {id:2, code: 'pl', name: 'Poland', flagUrl: 'https://flagcdn.com/w40/pl.png' },
-    { id:3, code: 'de', name: 'Germany', flagUrl: 'https://flagcdn.com/w40/de.png' },
+    { id: 1, code: 'en', name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w40/gb.png' },
+    { id: 2, code: 'pl', name: 'Poland', flagUrl: 'https://flagcdn.com/w40/pl.png' },
+    { id: 3, code: 'de', name: 'Germany', flagUrl: 'https://flagcdn.com/w40/de.png' },
   ];
 
+  constructor(private elRef: ElementRef) {}
 
   /**
    * Toggles the dropdown menu's open/closed state.
@@ -101,5 +102,12 @@ export class LanguagesComponent {
     this.translate.use(language.code);
     //console.log(`Language changed to: ${language.code}`);
     this.isOpen = false;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    if (this.isOpen && !this.elRef.nativeElement.contains(event.target)) {
+      this.isOpen = false;
+    }
   }
 }
