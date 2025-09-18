@@ -3,6 +3,7 @@ export interface ProjectDetail {
     title: string;
     description: string;
     image: string;
+    technologies?:string[];
     link?: string;
     techStack: string[];
     githubLink?: string;
