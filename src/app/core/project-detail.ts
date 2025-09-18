@@ -4,7 +4,7 @@ export interface ProjectDetail {
     description: string;
     image: string;
     technologies?:string[];
-    link?: string;
+    link?:{demo?:string, github?:string};
     techStack: string[];
     githubLink?: string;
 }
