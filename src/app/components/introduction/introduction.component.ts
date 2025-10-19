@@ -26,14 +26,7 @@ computer science technik informatyk 2017 with A technical diploma 2025 reference
   }
 
   aboutDe: AboutDe = {
-    aboutMe: `Vielseitiger Full-Stack-Entwickler mit über 2 Jahren Erfahrung in der Erstellung skalierbarer Lösungen 
-      in den Ökosystemen TypeScript, Python und PHP. Erfahren in NestJS, Django und Symfony, 
-      mit Schwerpunkt auf Backend-APIs, datengestützten Anwendungen und plattformübergreifender Webentwicklung. 
-      Nachweisliche Erfolge bei der Optimierung der API-Leistung um 40 % durch Abfrageoptimierung, 
-      Reduzierung der Serverkosten um 30 % durch Python-Automatisierungsskripte 
-      und Bereitstellung von über 3 produktionsreifen Apps mit 95 % Kundenzufriedenheit. 
-      Versiert im Entwurf von RESTful-Mikroservices, der Integration von Drittanbieter-APIs 
-      und der Pflege robuster CI/CD-Pipelines mit Docker und AWS.`,
+    aboutMe: `Full-Stack-Entwickler mit über 2,6 Jahren Erfahrung plus 2 Jahren technischer Schule. Vorherige Rolle: Arbeit mit internem ERP-System bei Eko Okna in Polen, alter Legacy-Codebase seit 2017 in Symfony 3+, verantwortlich für neue Funktionen (70 %) und Bugfixes im Back- und Frontend (30 %). Aktuelle Rolle: Als Freelancer baue ich eine progressive Reisebuchungs-App mit Angular 20 und NestJS, Ziel: Lösung von Problemen, die Gäste in Ägypten bei der Buchung von Reisen haben usw. Stark in TypeScript, PHP, Python, Docker, PostgreSQL, MySQL, Angular, Nest, Symfony. Abschluss Berufsschulprogramm in Informatik „Technik Informatyk“ 2017 mit techn. Diplom Note A, Referenznummer 351203 aus 2025.`,
   }
 
   /**
