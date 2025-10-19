@@ -12,15 +12,13 @@ import { AboutDe } from '../../core/about-de';
 export class IntroductionComponent {
   private translateService = inject(TranslateService);
   aboutMe: AboutMe = {
-    about: `Versatile Full-Stack Developer with 2+ years of   experience building scalable 
-      solutions across TypeScript, Python, and PHP ecosystems. 
-      Skilled in NestJS, Django, and Symfony, with a focus on  backend APIs, 
-      data-driven applications, and cross-platform web development. 
-      Proven success in optimizing API performance by 40% through query optimization, 
-      reducing server costs by 30% via Python automation  scripts, 
-      and delivering 3+ production-grade apps with 95% client  satisfaction. 
-      Adept at designing RESTful microservices, integrating  third-party APIs, 
-      and maintaining robust CI/CD pipelines with Docker and AWS.`,
+    about: `Full-stack engineer 2.6+ of experience plus 2 years of technical School, previous role i worked with an
+internal system erp at Eko Okna in Poland ,is old legacy code base written since 2017 using symfony
+3+ , i was responsible for building new functions 70% and fixed back-end and front end bugs 30%
+current role im freelance build progressive travel booking app via angular 20 with nest js my aim to
+resolve some issues that face guests in Egypt with booking a trip etc im strong in typescript php
+python docker postgres sql mysql angular nest symfony. I finished vocational school program in
+computer science technik informatyk 2017 with A technical diploma 2025 reference number 351203`,
   }
 
   aboutPl: AboutPl = {
@@ -50,7 +48,7 @@ export class IntroductionComponent {
    *
    * @returns The about object in the currently selected language.
    */
-    get aboutObj(): AboutMe | AboutPl | AboutDe {
+  get aboutObj(): AboutMe | AboutPl | AboutDe {
     if (this.translateService.currentLang === 'pl') {
       return this.aboutPl;
     } else if (this.translateService.currentLang === 'de') {
