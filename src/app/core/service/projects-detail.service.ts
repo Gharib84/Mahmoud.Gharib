@@ -34,11 +34,11 @@ export class ProjectsDetailService {
       description: 'My personal portfolio website.',
       image: 'images/Portfolio.png',
       link: {
-        demo: 'https://my-portfolio.com',
-        github: 'https://github.com/Gharib84/Portfolio-25'
+        demo: 'https://mahmoud-gharib.vercel.app/',
+        github: 'https://mahmoud-gharib.vercel.app/'
       },
       techStack: ['Angular', 'TypeScript', 'Tailwind CSS'],
-      githubLink: 'https://github.com/Gharib84/Portfolio-25'
+      githubLink: 'https://mahmoud-gharib.vercel.app/'
 
     },
     {
@@ -85,11 +85,11 @@ export class ProjectsDetailService {
       description: 'Moja osobista strona portfolio.',
       image: 'images/Portfolio.png',
       link: {
-        demo: 'https://my-portfolio.com',
-        github: 'https://github.com/Gharib84/Portfolio-25'
+        demo: 'https://mahmoud-gharib.vercel.app/',
+        github: 'https://mahmoud-gharib.vercel.app/'
       },
       techStack: ['Angular', 'TypeScript', 'Tailwind CSS'],
-      githubLink: 'https://github.com/Gharib84/Portfolio-25'
+      githubLink: 'https://mahmoud-gharib.vercel.app/'
 
     },
     {
@@ -136,11 +136,11 @@ export class ProjectsDetailService {
       description: 'Meine persönliche Portfolio-Website.',
       image: 'images/Portfolio.png',
       link: {
-        demo: 'https://my-portfolio.com',
-        github: ' https://github.com/Gharib84/Portfolio-25'
+        demo: 'https://mahmoud-gharib.vercel.app/',
+        github: 'https://mahmoud-gharib.vercel.app/'
       },
       techStack: ['Angular', 'TypeScript', 'Tailwind CSS'],
-      githubLink: 'https://github.com/Gharib84/Portfolio-25'
+      githubLink: 'https://mahmoud-gharib.vercel.app/'
 
     }, 
     {
