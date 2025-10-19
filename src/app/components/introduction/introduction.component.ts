@@ -22,13 +22,7 @@ computer science technik informatyk 2017 with A technical diploma 2025 reference
   }
 
   aboutPl: AboutPl = {
-    aboutMe: `Wszechstronny programista Full-Stack z ponad 2-letnim doświadczeniem w tworzeniu skalowalnych rozwiązań 
-      w ekosystemach TypeScript, Python i PHP. Biegły w NestJS, Django i Symfony, 
-      z naciskiem na backendowe API, aplikacje oparte na danych i rozwój aplikacji internetowych wieloplatformowych. 
-      Udokumentowane sukcesy w optymalizacji wydajności API o 40% dzięki optymalizacji zapytań, 
-      redukcji kosztów serwera o 30% dzięki skryptom automatyzacji Pythona oraz dostarczeniu ponad 3 aplikacji produkcyjnych 
-      z 95% satysfakcją klienta. Biegły w projektowaniu mikroserwisów RESTful, integracji z interfejsami API stron trzecich 
-      oraz utrzymywaniu solidnych potoków CI/CD z Dockerem i AWS.`,
+    aboutMe: `Inżynier full-stack z ponad 2,6 roku doświadczenia plus 2 lata szkoły technicznej. Poprzednia rola: pracowałem z wewnętrznym systemem ERP w Eko Okna w Polsce, to stary legacy codebase pisany od 2017 w Symfony 3+, odpowiadałem za budowanie nowych funkcji (70%) i naprawę błędów back-endu oraz front-endu (30%). Aktualna rola: jako freelancer buduję progresywną aplikację do bookingu podróży w Angular 20 z NestJS, celem jest rozwiązanie problemów, z jakimi borykają się goście w Egipcie przy rezerwacji wyjazdów itp. Jestem mocny w TypeScript, PHP, Python, Docker, PostgreSQL, MySQL, Angular, Nest, Symfony. Ukończyłem program szkoły zawodowej w informatyce „Technik Informatyk” w 2017 z dyplomem technicznym na ocenę A, numer referencyjny 351203 z 2025.`,
   }
 
   aboutDe: AboutDe = {
